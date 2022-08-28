@@ -11239,6 +11239,15 @@ typedef struct{
 }T_TABLE;
 
 const T_TABLE tvalTable[]={
+{0.3 , 0},
+{0.5 , 5},
+{0.8 , 10},
+{1.0 , 15},
+{1.25 , 20},
+{1.5 , 25},
+{1.7 , 30},
+{1.85 , 35},
+{1.95 , 40},
 {2.2 ,50},
 {2.35 ,60},
 {2.55 ,70},
@@ -11256,8 +11265,8 @@ const T_TABLE tvalTable[]={
 {3.76 ,190},
 {3.8 ,200},
 {3.84 ,210},
-{3.86 ,220},
-{3.94 ,230},
+{3.9 ,220},
+{3.93 ,230},
 {3.95 ,240},
 {3.96 ,250},
 {3.97 ,260},
@@ -11331,7 +11340,7 @@ void main(void)
         putstr(s);
 
 
-        if(alc2ppm <= 50 ){
+        if(alc2ppm <= 5 ){
             do { LATCbits.LATC1 = 1; } while(0); do { LATCbits.LATC0 = 0; } while(0);
         }else{
             do { LATCbits.LATC1 = 0; } while(0); do { LATCbits.LATC0 = 1; } while(0);

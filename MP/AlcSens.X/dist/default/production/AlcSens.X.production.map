@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\AlcSens.X.production.sym \
   --cmf=dist/default/production\AlcSens.X.production.cmf -z -Q16F18326 \
-  -oC:\Users\ysuga\AppData\Local\Temp\spps.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\ysuga\AppData\Local\Temp\smm4.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/AlcSens.X.production.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=02140h-027EFh -pstack=STACK -ACODE=00h-07FFhx8 \
   -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 -ACONST=00h-0FFhx64 \
@@ -35,7 +35,7 @@ Linker command line:
   -AIDLOC=08000h-08003h -DIDLOC=2 -AEEDATA=00h-0FFh/0F000h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 -preset_vec=00h,intentry,init,end_init -ppowerup=CODE \
-  -pcinit=CODE -pfunctab=ENTRY -k C:\Users\ysuga\AppData\Local\Temp\spps.o \
+  -pcinit=CODE -pfunctab=ENTRY -k C:\Users\ysuga\AppData\Local\Temp\smm4.o \
   dist/default/production\AlcSens.X.production.o 
 
 Object code version is 3.11
@@ -45,7 +45,7 @@ Machine type is 16F18326
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ysuga\AppData\Local\Temp\spps.o
+C:\Users\ysuga\AppData\Local\Temp\smm4.o
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        4        0       4
@@ -119,7 +119,7 @@ dist/default/production\AlcSens.X.production.o
                 stringtext3                        2018     2018        C     4000       0
                 stringtext2                        2000     2000       18     4000       0
                 nvBANK2                             160      160        6      120       1
-                stringtext1                        1800     1800      11A     3000       0
+                stringtext1                        1800     1800      150     3000       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -187,7 +187,7 @@ TOTAL           Name                               Link     Load   Length     Sp
                 stringtext4                        2024     2024        4         0
                 stringtext3                        2018     2018        C         0
                 stringtext2                        2000     2000       18         0
-                stringtext1                        1800     1800      11A         0
+                stringtext1                        1800     1800      150         0
 
         CLASS   STRING         
 
@@ -372,7 +372,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 maintext                       001383  000159  0014DC      2706       0  CODE        2
                 text22                         0014DC  000170  00164C      29B8       0  CODE        2
                 text19                         00164C  0001B4  001800      2C98       0  CODE        2
-                stringtext1                    001800  00011A  00191A      3000       0  STRCODE     2
+                stringtext1                    001800  000150  001950      3000       0  STRCODE     2
                 text39                         001A47  000004  001A4B      348E       0  CODE        2
                 text46                         001A4B  000006  001A51      3496       0  CODE        2
                 text45                         001A51  000006  001A57      34A2       0  CODE        2
@@ -439,14 +439,14 @@ UNUSED ADDRESS RANGES
         BANK9            004A0-004EF              50           1
         BIGRAM           02000-027EF             7F0           1
         CODE             00800-00801               2           2
-                         0191A-01A46             12D
+                         01950-01A46              F7
                          02037-03FFF             800
         CONST            00800-00801               2           2
-                         0191A-01A46              E6
+                         01950-01A46              B0
                          02037-03FFF             100
         EEDATA           0F000-0F0FF             100           2
         ENTRY            00800-00801               2           2
-                         0191A-01A46              E6
+                         01950-01A46              B0
                          02037-03FFF             100
         RAM              00166-0016F               A           1
                          00220-0026F              50
@@ -505,10 +505,10 @@ UNUSED ADDRESS RANGES
         SFR9             00480-0049F              20           1
         STACK            02140-027EF             6B0           1
         STRCODE          00800-00801               2           2
-                         0191A-01A46             12D
+                         01950-01A46              F7
                          02037-03FFF            1FC9
         STRING           00800-00801               2           2
-                         0191A-01A46              E6
+                         01950-01A46              B0
                          02037-03FFF             100
 
                                   Symbol Table
@@ -961,7 +961,7 @@ __end_of_strcpy                                text8        01BBB
 __end_of_strlen                                text24       01B3A
 __end_of_strncmp                               text4        01DFF
 __end_of_tolower                               text6        01C28
-__end_of_tvalTable                             stringtext1  0191A
+__end_of_tvalTable                             stringtext1  01950
 __end_of_vfpfcnvrt                             text3        01000
 __end_of_vfprintf                              text2        01CB0
 __initialization                               cinit        007E8
@@ -1228,7 +1228,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 122 in file "main.c"
+		line 131 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2449,7 +2449,7 @@ Total ram usage:        6 bytes
 
  *************** function _putstr *****************
  Defined at:
-		line 114 in file "main.c"
+		line 123 in file "main.c"
  Parameters:    Size  Location     Type
   p               2    1[COMMON] PTR unsigned char 
 		 -> main@s(20), STR_1(24), 
@@ -2978,9 +2978,9 @@ C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c estimated
 
 shared
 		__initialization		CODE           	07E8	0000	21
-		_tvalTable     		STRCODE        	1800	0000	282
+		_tvalTable     		STRCODE        	1800	0000	336
 
-shared estimated size: 303
+shared estimated size: 357
 
 mcc_generated_files/mcc.c
 		_WDT_Initialize		CODE           	1A47	0000	4

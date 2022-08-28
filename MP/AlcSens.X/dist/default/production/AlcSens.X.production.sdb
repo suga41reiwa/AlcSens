@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F18326 ]
 [d frameptr 6 ]
-"140 C:\GIT\AlcSens\MP\AlcSens.X\main.c
+"149 C:\GIT\AlcSens\MP\AlcSens.X\main.c
 [e E6342 . `uc
 channel_ANA2 2
 channel_AVSS 60
@@ -93,9 +93,9 @@ channel_FVR 63
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"114 C:\GIT\AlcSens\MP\AlcSens.X\main.c
+"123 C:\GIT\AlcSens\MP\AlcSens.X\main.c
 [v _putstr putstr `(v  1 e 1 0 ]
-"122
+"131
 [v _main main `(v  1 e 1 0 ]
 "67 C:\GIT\AlcSens\MP\AlcSens.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -282,7 +282,7 @@ channel_FVR 63
 [v _nout nout `i  1 s 2 nout ]
 [s S245 . 6 `f 1 v 4 0 `us 1 alcppm 2 4 ]
 "64 C:\GIT\AlcSens\MP\AlcSens.X\main.c
-[v _tvalTable tvalTable `DC[47]S245  1 e 282 0 ]
+[v _tvalTable tvalTable `DC[56]S245  1 e 336 0 ]
 [s S22 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
@@ -297,24 +297,24 @@ channel_FVR 63
 [v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
-"122 C:\GIT\AlcSens\MP\AlcSens.X\main.c
+"131 C:\GIT\AlcSens\MP\AlcSens.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"139
+"148
 [v main@i i `i  1 a 2 45 ]
-"130
+"139
 [v main@s s `[20]uc  1 a 20 9 ]
-"134
+"143
 [v main@fvrl fvrl `f  1 a 4 39 ]
-"132
+"141
 [v main@total total `l  1 a 4 35 ]
-"131
+"140
 [v main@ftotal ftotal `f  1 a 4 31 ]
-"133
+"142
 [v main@n n `i  1 a 2 47 ]
-"135
+"144
 [v main@alc2ppm alc2ppm `us  1 a 2 43 ]
-"165
+"174
 } 0
 "9 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -752,11 +752,11 @@ channel_FVR 63
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"114 C:\GIT\AlcSens\MP\AlcSens.X\main.c
+"123 C:\GIT\AlcSens\MP\AlcSens.X\main.c
 [v _putstr putstr `(v  1 e 1 0 ]
 {
 [v putstr@p p `*.26uc  1 p 2 1 ]
-"120
+"129
 } 0
 "132 C:\GIT\AlcSens\MP\AlcSens.X\mcc_generated_files/eusart.c
 [v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
